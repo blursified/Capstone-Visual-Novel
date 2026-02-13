@@ -7,6 +7,9 @@ define e = Character("bruh")
 
 
 # The game starts here.
+transform half_size: 
+    zoom 0.5 #adjust as required
+    center
 
 label start:
 
@@ -20,7 +23,7 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    show hawk happy at half_size
 
     # These display lines of dialogue.
 
