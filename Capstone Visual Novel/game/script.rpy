@@ -11,6 +11,10 @@ transform half_size:
     zoom 0.5 #adjust as required
     center
 
+transform more_zoomed:
+    zoom 0.2
+    center
+
 label start:
 
     # Show a background. This uses a placeholder by default, but you can
@@ -29,7 +33,7 @@ label start:
 
     h "yaaaaaaaaaaaaaaaaaay"
 
-    show hawk curious at half_size
+    show hawk curious at more_zoomed
 
     h "Arrooo?"
 
