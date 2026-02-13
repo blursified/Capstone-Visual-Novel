@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("bruh")
+define h = Character("Hawk")
 
 
 # The game starts here.
@@ -27,9 +27,11 @@ label start:
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    h "yaaaaaaaaaaaaaaaaaay"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    show hawk curious at half_size
+
+    h "Arrooo?"
 
     # This ends the game.
 
