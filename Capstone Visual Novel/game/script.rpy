@@ -6,13 +6,18 @@
 define h = Character("Hawk")
 define c = Character("Cheng Lao Shi")
 
-transform half_size: 
-    zoom 0.5 #adjust as required
+transform cls_center: 
+    zoom 0.35 #adjust as required
     center
+    
+transform cls_right: 
+    zoom 0.35 #adjust as required
+    right
 
-transform more_zoomed:
-    zoom 0.35
-    center
+transform h_left:
+    zoom 0.2
+    left
+
 # The game starts here.
 label start:
 
@@ -26,7 +31,7 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show chenglaoshi rest at more_zoomed
+    show chenglaoshi rest at cls_center
     c "Ahem"
 
     show chenglaoshi rest:
@@ -44,10 +49,18 @@ label start:
             jump Choice_2
     return
 
-    label Choice_1:
-        c "Hooray!"
-        return
+label Choice_1:
+    c "Hooray!"
+    jump start2
+label Choice_2:
+    c "I'm sure you'll end up having fun!"
+    jump start2
+    
 
-    label Choice_2:
-        c "I'm sure you'll end up having fun!"
-        return
+label start2:
+    show chenglaoshi rest at cls_right
+    show hawk curious at h_left
+
+    c "Hey puppers."
+    h "Arf!"
+    return
