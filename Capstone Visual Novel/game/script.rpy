@@ -11,7 +11,7 @@ transform half_size:
     center
 
 transform more_zoomed:
-    zoom 0.2
+    zoom 0.35
     center
 # The game starts here.
 label start:
@@ -26,20 +26,28 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show chenglaoshi rest
-
-    # These display lines of dialogue.
-
+    show chenglaoshi rest at more_zoomed
     c "Ahem"
 
+    show chenglaoshi rest:
+        ypos 850    
+    with move
     c "Hi, I'm Cheng Lao Shi."
 
     c "Welcome to Mandarin class *wink*"
 
-    # h "Can you take me for a walk?"
-    # menu:
-    #     "Sure!":
-
-    #     "F Nah":
-    # This ends the game.
+    c "Are you excited for class?"
+    menu:
+        "Uh yeah!":
+            jump Choice_1
+        "Um.. not really.":
+            jump Choice_2
     return
+
+    label Choice_1:
+        c "Hooray!"
+        return
+
+    label Choice_2:
+        c "I'm sure you'll end up having fun!"
+        return
