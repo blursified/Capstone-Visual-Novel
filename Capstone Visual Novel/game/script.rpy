@@ -4,9 +4,8 @@
 # name of the character.
 
 define h = Character("Hawk")
+define c = Character("Cheng Lao Shi")
 
-
-# The game starts here.
 transform half_size: 
     zoom 0.5 #adjust as required
     center
@@ -14,7 +13,7 @@ transform half_size:
 transform more_zoomed:
     zoom 0.2
     center
-
+# The game starts here.
 label start:
 
     # Show a background. This uses a placeholder by default, but you can
@@ -27,16 +26,20 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show hawk happy at half_size
+    show chenglaoshi rest
 
     # These display lines of dialogue.
 
-    h "yaaaaaaaaaaaaaaaaaay"
+    c "Ahem"
 
-    show hawk curious at more_zoomed
+    c "Hi, I'm Cheng Lao Shi."
 
-    h "Arrooo?"
+    c "Welcome to Mandarin class *wink*"
 
+    # h "Can you take me for a walk?"
+    # menu:
+    #     "Sure!":
+
+    #     "F Nah":
     # This ends the game.
-
     return
