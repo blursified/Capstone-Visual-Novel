@@ -8,6 +8,7 @@ define md = Character("Mr. Duras", color="#8f671e")
 define r = Character("Rajah", color="#ed6328")
 define b = Character("Blaire", color="#eba2e1")
 define v = Character("Video", color="#7a7976")
+define s = Character("-", color="#7a7976")
 
 transform zoom_center: 
     zoom 0.35 #adjust as required
@@ -266,7 +267,7 @@ label end_of_day1:
     e "I didn't spend all year keeping it at an A just for it to drop right before the marking period ends!"
     e "I'll have to ask Mr. Duras if I can make up the credit. And I can't mess up any more assignments, or it'll drop to a B...."
     e "I'll just try finishing the homework in the meantime...."
-    jump
+    jump start_day2
     return
 
 label start_day2:
@@ -307,10 +308,132 @@ label ask_duras_to_redo:
     e "Okay....."
     md "Oh, dear, the bell's about to ring in five minutes. Get ready for class, Ether, while I gather the rest of the class."
     md "{alpha=0.5}{i}leaves the room{/i}{/alpha}"
-    jump
+    jump day2_start_class
     return
 
 label ask_rajah_if_finished:
+    e "Hi Rajah-"
+    r "{alpha=0.5}{i}looking up{/i}{/alpha}"
+    r "Yo."
+    e "Did you finish the homework from yesterday?"
+    r "{alpha=0.5}{i}thinking for a moment{/i}{/alpha}"
+    r "You mean the worksheet?"
+    e "Yeah."
+    r "No, I didn't. I didn't even finish the classwork either. Mr. Duras was going wayyy too fast."
+    e "I know, right? And he was moving around so much that I kept getting distracted."
+    r "That man was talking at the speed of light."
+    b "Really?"
+    r "Not-"
+    r "{alpha=0.5}{i}sighs{/i}{/alpha}"
+    r "Hello, Blaire."
+    b "I thought Mr. Duras was talking just fine. It wasn't that hard to understand."
+    r "Uh huh."
+    b "Mr. Duras gave us detailed explanations for everything, and practically gave us all the answers on the worksheet. I even finished it with 15 minutes left to spare. Maybe you guys weren't trying hard enough."
+    md "Alright, class, come on in. The bell will ring soon, so let's get started for today."
+    jump day2_start_class
+    return
+
+label day2_start_class:
+    e "{alpha=0.5}{i}sits down in his seat{/i}{/alpha}"
+    md "Alright, class, we're going to skip the warm-up for today and continue where we left off-"
+    md "Yes, Rajah?"
+    r "Mr. Duras, could you try going a little slower this time?"
+    md "{alpha=0.5}{i}hesitating{/i}{/alpha}"
+    md "Well, Rajah, we have a lot to get through, but you can let me know if you need extra time to get the notes down."
+    md  "So, last we left off on how the 3 branches of government were established. Today, we're going to get into the important cases concerning the 3 branches."
+    md "But first! Let's go over the answers to yesterday's classwork."
+    e "{i}Okay, so this was all the stuff I didn't know yesterday. I need to write this down.{/i}"
+    md "Who can tell me what the Legislative Branch does?"
+    md "Yes, Blaire."
+    b "The Legislative branch creates laws."
+    e "{alpha=0.5}{i}furiously scribbling{/i}{/alpha}"
+    e "{i}Legislative Branch. Creates laws. Got it.{/i}"
+    md 'Excellent! The word "Legislative" means to "do with the law". Alright, now who can tell me how many departments the Executive Branch controls?'
+    md "That's correct, Danny! But please raise your hand next time."
+    e "{i}I couldn't even hear what Danny said...{/i}"
+    md "For those who couldn't hear Danny, the Executive Branch controls 15 departments. You'll be required to name some of these departments on the upcoming quiz. Who can name an Executive Department? Shout it out!"
+    e "{i}There's a quiz on this?!{/i}"
+    e "{i}There's so many people shouting that I can't even hear any single one of the departments...{/i}"
+    md "I see you all will do just excellent on the quiz!"
+    e "{i}No, I won't....{/i}"
+    md "Now, how about an example of how the Judicial Branch's judgment influenced an Executive Order?"
+    e '{i}What does he mean when he says "influenced"? How did it affect the Executive Order?{/i}'
+    md "Yes, Blaire, that {i}is{/i} an example... There was a time when the Judicial Branch declared the president's tariffs unconstitutional! What did the president do afterward?"
+    r "{alpha=0.5}{i}whispering{/i}{/alpha}"
+    r "Ether, do you get the unconstitutional part?"
+    e "No...... Maybe you should ask him?"
+    r "{alpha=0.5}{i}raises hand{/i}{/alpha}"
+    md "Yes, Rajah?"
+    r "Why is it important that the president's actions were declared unconstitutional?"
+    md 'Well, declaring something "unconstitutional" means that it goes against the Constitution!'
+    r "......"
+    md "Is that clear?"
+    r "..Why is it important that something is against the Constitution?"
+    md "Ah! We covered this last class. Our government principles run by the Constitution, and if something is declared against the Constitution, it goes against everything the government stands for."
+    r "Oh, yeah, that makes... sense...."
+    r "{alpha=0.5}{i}to Ether{/i}{/alpha}"
+    r "I felt so stupid asking that, and I'm still not sure I understand it..."
+    md "Great! Now, back to what Blaire was saying. In the case against the tariffs, did the president take any action?"
+    md "Right, Roger, they didn't. This case wouldn't necessarily have been directly affected by the Judicial Branch's judgement, but I would've accepted that as an answer if you clarified that the Executive Order hadn't changed after the Judicial Branch's judgment."
+    md "Do you have another question, Rajah?"
+    r "Wait, so if the Judicial Branch couldn't do anything, then what about the Executive Order changed?"
+    md "Nothing!"
+    r "Huh??"
+    md "All the Judicial Branch does is pass judgement. The branches that enforce that judgement are the Legislative and Executive."
+    r "So... wouldn't the other branches just be able to ignore the Judicial Branch?"
+    md "In essence, yes."
+    r ".. If it can be ignored...."
+    r "... then why does it exist?"
+    s "{alpha=0.5}{i}the class laughs{/i}{/alpha}"
+    r "{alpha=0.5}{i}embarrassed{/i}{/alpha}"
+    r "Never asking again."
+    md "And that's why our lesson today will be about the cases that demonstrate just how important the Judicial Branch is. So, without any further ado, let's jump into our first case!"
+    md "The first one we'll be talking about is Shaw v. Rucker. The case goes like this: When Zebulon was first split into its colonies, the population of the colony decided how many votes they would get out of the entire planet..."
+    e "{alpha=0.5}{i}whispering{/i}{/alpha}"
+    e "Mr. Duras keeps accidentally blocking the screen with his hands..."
+    r "Hey, you could tell him to stop. I don't wanna look stupid again."
+    e "You didn't look that dumb... Doesn't Mr. Duras' constant walking around bother you?"
+    r "No one else has a problem with it, so I guess it's just us."
+    e "Did you get the rest of the notes down?"
+    r "Like, a bit, I'd say? Not all of it. Here, you can take a look."
+    md ".... Shaw v. Rucker abolished the use of gerrymandering by species! Ether, are you paying attention?"
+    e "Uh, yes, sir."
+    md "Good, good. Could you explain to me, in your words, why Shaw v. Rucker matters?"
+    e "It.... didn't let us group certain districts?"
+    md "Close. It didn't let us group certain districts to skew the vote. Now, next, we'll go onto the case Zebulon v. Lopez.... Oh, dear, this room is getting a little cold. I'll turn on the heater before we go on."
+    md "{alpha=0.5}{i}click{/i}{/alpha}"
+    md "Alright, so back to Zebulon v. Lopez, where a young boy brought weapons to school..."
+    e "{i}I can't listen to what he's saying AND write down the notes- it's either one or the other! And that heater is really loud...... Argh. No, I just need to focus.{/i}"
+    md "... The Supreme Courts initially couldn't decide of Lopez had broken the state or federal law, so it was undecided whether he would stand trial under the nation or the state jurisdiction. Remember, jurisdiction is---"
+    e "{i}I can still hear the heater grumbling in the background.. it's so distracting. I'm getting a little sweaty too. I'll take off my jacket.{/i}"
+    md "The government got into a scuffle with the colony Lopez had been from. It had almost been like this-"
+    md "{alpha=0.5}{i}walking to a map by the board{/i}{/alpha}"
+    md "So here was the colony Lopez was from. The government met state officials here, here, and here to-"
+    e "{i}What am I supposed to be looking at? He's pointing at the map too quickly- You know what, maybe I'll just focus on the notes instead.{/i}"
+    e "{i}But I can't even focus on what I'm writing down because Mr. Duras keeps talking and tapping the map so loudly... and this room keeps getting warmer....{/i}"
+    md ".. And that'll wrap up the lecture for today."
+    e "{i}Finally. We're done.{/i}"
+    jump worksheet_assigned
+    return
+
+label worksheet_assigned:
+    md "Now, it's time for you to apply what you learned in this worksheet I'm about to pass out! It'll help you prepare for the quiz next week."
+    e "{i}THE QUIZ IS NEXT WEEK?! Didn't we just start learning this stuff?{/i}"
+    md "You should be able to finish the worksheet before the end of class. It is just as long as the last one."
+    #insert existential dread here
+    e "{alpha=0.5}{i}reading the questions...{/i}{/alpha}"
+    e "{i}I really can't do this alone…. I'll need help.......{/i}"
+    menu:
+        "Ask Blaire again":
+            jump ask_blaire_again
+        "Ask Mr. Duras again":
+            jump ask_duras_again
+    return
+
+label ask_blaire_again:
+    return
+
+label ask_duras_again:
     return
 
 
