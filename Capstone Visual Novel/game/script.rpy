@@ -260,7 +260,7 @@ label end_of_day1:
     e "Wow, the comments are just as annoyed as I am, hah..."
     e "Maybe I need a break and do something else for a little bit."
     e "Let's see how my grades are doing."
-    e "96% (A) in Statistics, 94% (A) in Mandarin... 90.2% (A-) in Government? How did my grade drop 5% in a day? It used to be almost 96%..."
+    e "96 percent (A) in Calculus, 94 percent (A) in Mandarin... 90.2 percent (A-) in Government? How did my grade drop 5 percent in a day? It used to be almost 96 percent..."
     e "Oh, Mr. Duras gave me a C on the classwork... 70/100... I didn't know it was weighted that heavily! Dang it.... What am I supposed to do?"
     e "What if my parents find out about this?!"
     e "They're going to be so mad...."
@@ -431,10 +431,185 @@ label worksheet_assigned:
     return
 
 label ask_blaire_again:
+    e "Blaire..?"
+    b "{alpha=0.5}{i}distantly talking with other people{/i}{/alpha}"
+    e "{i}She looks busy… maybe I shouldn't bother her...{/i}"
+    e "{i}But how am I going to prepare for the test if I don't ask for help{/i}"
+    e "{i}No, I can do this....{/i}"
+    e "Blaire!"
+    b "And then I-"
+    b "{alpha=0.5}{i}turns{/i}{/alpha}"
+    b "Oh, hi again, Ether."
+    e "{i}I really don't want to take up her time... I already feel bad for asking....{/i}"
+    e "Can I borrow your notes?"
+    b "{alpha=0.5}{i}handing over the notebook{/i}{/alpha}"
+    b "Don't tell me you didn't understand today's class either?"
+    b "Ugh, fine, here you go. Knock yourself out."
+    e "{i}Her notes are.... A little messy. But she did write down a lot more than I did, so this should be helpful.{/i}"
+    e "{i}The first question asks about the case Shaw v. Rucker... I know it was something about gerrymandering, but what was the difference between that and redistricting? They both redraw the district lines...{/i}"
+    e "{i}All she wrote was that it ruled against racial gerrymandering. I'll just write that down, then.{/i}"
+    e "{i}The next question is about the independent regulatory commissions and executive regulatory commissions... her notes have a lot less words than the slides...{/i}"
+    b "You're not still struggling, are you?"
+    e "Uh... well..."
+    b "Here, just copy mine. It'll make sense afterward."
+    e "Oh, okay... thanks..."
+    e "{i}I guess I'll at least get a good grade on this worksheet, so my grade won't drop any lower yet, but will it matter if I fail the quiz?{/i}"
+    e "{i}Blaire said it would make sense once I read through it properly. I'll copy down her notes too, since she lent me her notebook already.{/i}"
+    e "{alpha=0.5}{i}visible frustration{/i}{/alpha}"
+    e "{i}There are too many people talking, and I can't even comprehend what I'm reading.... it's too loud...{/i}"
+    e "{i}How did Blaire manage to get this done when the room's so loud?{/i}"
+    e "{i}Is it just me? Is there something wrong with me that makes it so hard to do anything in this class?{/i}"
+    b "Ether-"
+    e "{i}I wish I was.. I don't know, smart enough to know how to handle this stuff?{/i}"
+    e "Ether!"
+    e "Yes? Sorry, I was trying to understand your notes."
+    b "It's time to turn in the worksheet. Did you finish yours?"
+    e "Yes, thank you."
+    e "{i}But I was only able to finish it with help....{/i}"
+    e "{i}What does that say about me as a student? Am I just slow?{/i}"
+    jump worksheet_turned_in
     return
 
 label ask_duras_again:
+    e "Mr. Duras, could I get some help on the worksheet?"
+    md ".....Ether, how long have you spent on the worksheet?"
+    e "I read the questions, and tried to reread my notes, but I didn't fully understand what happened for the Shaw v. Rucker case in the first question."
+    md "Why don't you bring your notebook over and tell me what you wrote down for that case?"
+    e "I wrote down that it ruled against gerrymandering, but I didn't get enough down to understand why that was the case."
+    md "Were you really paying attention during class?"
+    e "Yes. But there was just a lot going on, and I couldn't hear what you were trying to say while you were explaining the slides, and it was really hard for me to focus."
+    md "Are you sure? I see you talking to Rajah quite often while I am lecturing."
+    e "It's because I was trying to get the notes from him-"
+    md "I am beginning to believe that perhaps you were not trying at all. If you are having side conversations in class, it is only natural that you would lose focus. You can not expect me to help you when you are not making a concerted effort to do well in class."
+    e "But I-"
+    md "Now, if you'll excuse me, Ether, I see Roger has his hand raised. I will come back to you once you have shown me that you are trying in this class."
+    e "But.. I am.."
+    md "{alpha=0.5}{i}walking away{/i}{/alpha}"
+    e "... trying...."
+    e "{alpha=0.5}{i}walking back to seat{/i}{/alpha}"
+    e "{i}I didn't understand the notes either, and I hadn't been talking to Rajah at all during that class....{/i}"
+    e "{i}Am I wrong for asking for help?{/i}"
+    e "{i}I guess it's my own fault I'm falling behind, huh?{/i}"
+    r "Ether! Ether!"
+    e "Yeah?"
+    r "Danny gave me all the answers to the worksheet. Here, copy them down while you still have time-"
+    e "Oh, thanks. Do you understand the answers, though?"
+    r "No. but I'd rather get a good grade on the worksheet right now and figure it out later. It's not like I'd understand it even if I asked Danny to explain every single one of them. Even Roger understood what Duras was trying to explain. I just gave up."
+    e "I don't know if that's.."
+    r "Just copy it down for now, ask questions later. You've got 10 minutes left to finish it."
+    e "{alpha=0.5}{i}while copying{/i}{/alpha}"
+    e "{i}I don't like how little of this I understand....{/i}"
+    e "{i}How has everyone else been able to understand it so far?{/i}"
+    e "{i}At least I'm not the only one....{/i}"
+    r "{alpha=0.5}{i}grumbling to himself{/i}{/alpha}"
+    r "How was I supposed to explain how the judicial branch was important when it's been ignored so many times???"
+    r "{alpha=0.5}{i}checking time{/i}{/alpha}"
+    r "Ether! There's like 5 more minutes left of class. You done yet?"
+    e "Almost-"
+    jump worksheet_turned_in
     return
+
+label worksheet_turned_in:
+    md "Okay class, our time for today has come to a close. Please turn in the worksheet and study for the quiz next class!"
+    r "Mr. Duras!"
+    md "Yes, Rajah?"
+    r "Uh, is the quiz multiple choice?"
+    md "Yes, there will multiple of those questions, but they will not make up a majority of the quiz since I would like to test your understanding of the content rather than your guessing abilities. Most of the test will be short-answer questions. It will also be closed-note."
+    r "How many questiions are there?"
+    md "Ah, I'll have to check.... it should take you no longer than 45 minutes to finish, though."
+    r "Good to know."
+    r "{alpha=0.5}{i}muttering to Ether{/i}{/alpha}"
+    r "I am so flunking this quiz....."
+    e "{alpha=0.5}{i}timidly raising hand{/i}{/alpha}"
+    md "......."
+    md "Yes, Ether?"
+    e "Will there be retakes or corrections on this quiz?"
+    md "..."
+    md "No, there will not."
+    md "Are there any other questions?"
+    e "{i}He looks annoyed with me....{/i}"
+    e "{i}But I genuinely didn't understand any of the content, and I'll need help anyway...{/i}"
+    md "If there are no other questions, you are all dismissed. Please turn in the homework from yesterday and the worksheet from today in the box by the door. Have a good day, everyone, and remember to study!"
+    e "{i}Okay... now, do I want to ask Mr. Duras for help?{/i}"
+    menu:
+        "Ask Mr. Duras for quiz help":
+            jump ask_md_for_quiz_help
+        "Give up on Mr. Duras entirely":
+            jump give_up_on_md
+    return
+
+label ask_md_for_quiz_help:
+    e "{i}I'm afraid to ask Mr. Duras for help... but I really don't want to get a bad grade on this quiz.{/i}"
+    e "{i}Asking him for help can't be too bad. There's nothing for me to lose.{/i}"
+    e "{alpha=0.5}{i}approaching the desk{/i}{/alpha}"
+    e "Mr. Duras?"
+    md "Hello, Ether. How may I help you?"
+    e "I want help understanding the content that will be on the quiz."
+    md "Alright."
+    md "..."
+    md "What is confusing to you?"
+    e "The functions of the three branches are hard for me to understand, and even more to remember. I was wondering if you could post a study guide or practice questions like the ones on the quiz? Maybe even the slides you used?"
+    md "Even if I were to post such resources for you, how could I be sure that you would use them?"
+    e ".... What do you mean?"
+    md "I have seen you consistently have side conversations during lecture. When you're given work time, you do not seem to use it wisely. From what I see, you only sit there. I also believe I saw you copying off one of your peers' papers."
+    e "I-"
+    md "You may not cheat on the quiz, Ether. Whatever good you believe copying will do, get it out of your head. Copying is a student's way of benefitting from other people's work when you don't want to use the energy to do it yourself."
+    e "Mr. Duras, I understand that copying is wrong, but I didn't understand the content and I was afraid to get a bad grade on the worksheet and-"
+    md "Grades should not be worth sacrificing academic integrity for."
+    e "Yes. I know. I understand."
+    e "{i}He thinks I'm not trying at all.{/i}"
+    e "Can you at least.... post the slides? So I can... catch up on the notes?"
+    md "........"
+    md "Fine, Ether. But I will remind you that I have no tolerance for cheating, and if I catch you doing so on the quiz, you will get a zero without any chance of redoing it."
+    e "Yes... I know. I don't intend to."
+    md "I would hope not."
+    md "Run along now, I'd like to eat my lunch. The slides are available on google classroom."
+    e "The quiz is on everything we've covered so far, right?"
+    md "Yes. Have a good rest of your day, Ether."
+    e "You too."
+    e "{alpha=0.5}{i}turning to leave{/i}{/alpha}"
+    e "{i}No wonder Rajah doesn't want to ask Mr. Duras for help anymore. Mr. Duras just makes me feel small and insignificant.{/i}"
+    jump goes_home_to_study
+    return
+
+label give_up_on_md:
+    e "{i}No, I don't want to bother him even more....{/i}"
+    jump goes_home_to_study
+    return
+
+label goes_home_to_study:
+    e "{i}I have to go home to study for this quiz....{/i}"
+    e "{i}Where do I even start?{/i}"
+    e "{i}I am definitely not asking Mr. Duras for any sort of help from now on...{/i}"
+    r "Ether!"
+    r "Hey, you look a little depressed. What're you thinking about?"
+    e "Just worried about the quiz in Government... "
+    r "It's JUST a quiz. It'll probably be fine."
+    e "I mean, yeah, but if we fail, our grades are going to drop a decent amount.... Plus, I barely understood what Mr. Duras was saying, and he makes me feel stupid for even trying to ask."
+    r "I feel you, bro. But..."
+    e "How do you plan to study for the test?"
+    r "..."
+    r ".. Guess...?"
+    e "You can't be serious."
+    r "I {i}thought{/i} about asking Blaire or Danny for help, but........ then I got a little self-conscious and I thought eh, my grade could probably tank it anyway!"
+    e "Is that a good line of thinking for long-term?"
+    r "Probably not, but sometimes you gotta live in the present instead of stressing over the future, y'know?"
+    e "I'm pretty sure that's not what the quote was for-"
+    r "Look, Ether, it's a problem for next class. So I'll start worrying about it- {i}next class{/i}."
+    e "{i}I wish I had that kind of luxury..... To be brave enough to put off academic work. Hah.{/i}"
+
+    # -------- Ether arrives home
+
+    e "{i}To get a good grade on the test, I should start studying as soon as I finish everything else.{/i}"
+    e "{i}Maybe if I spend more time studying, I'll absorb more of the content!{/i}"
+    e "{i}Let's see if Mr. Duras posted anything to help me study on the quiz...{/i}"
+    e "Here we go.."
+    e '"Hello, class! As I told you in class today, there will be a quiz the next time I see you. Please study the following topics in order to succeed:"'
+    e "Functions of 3 branches.... Articles of Colonies... Zebulon's important court cases, including Shaw v. Rucker.... so everything he's ever mentioned the last two days."
+    e "I genuinely didn't get enough of the notes down, though... maybe there's some resource online I could find that can help me understand what he was trying to teach."
+    
+    return
+
 
 
 
