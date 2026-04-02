@@ -9,6 +9,7 @@ define r = Character("Rajah", color="#ed6328")
 define b = Character("Blaire", color="#eba2e1")
 define v = Character("Video", color="#7a7976")
 define s = Character("-", color="#7a7976")
+define n = Character("Random Students", color="#7a7976")
 
 transform zoom_center: 
     zoom 0.35 #adjust as required
@@ -607,11 +608,74 @@ label goes_home_to_study:
     e '"Hello, class! As I told you in class today, there will be a quiz the next time I see you. Please study the following topics in order to succeed:"'
     e "Functions of 3 branches.... Articles of Colonies... Zebulon's important court cases, including Shaw v. Rucker.... so everything he's ever mentioned the last two days."
     e "I genuinely didn't get enough of the notes down, though... maybe there's some resource online I could find that can help me understand what he was trying to teach."
-    
+    e "Maybe I'll try looking it up on YouTube again...."
+    e "Here's one. I hope it's better than the one I found yesterday..."
+    e "The Legislative Branch creates laws. Yes, that is one of the few things I actually remember."
+    e "The Executive Branch... carries out the law. They just enforce whatever laws are created using the Departments... ohhh..... that's not even that hard to understand! How come I didn't get it during class?"
+    e "The Judicial Branch sets precedents with their decisions that influence future cases... also can rule anything unconstitutional for the Executive to strike down. Yeah, this really isn't hard to understand when the person in this video is the one explaining it."
+    e "Maybe it's because he's not moving around as much as Mr. Duras is... and it's much quieter in my room than in the classroom...."
+    e "It shouldn't have made that much of a difference, though? The material was still easy for me to pick up when it was explained by the video........ maybe I'm just slow or something..."
+    e "I've been studying this for about thirty minutes- I'll take a break to check my grades."
+    e "Oh, it looks like Mr. Duras already graded the stuff we turned in today....."
+    e "I got full points on the classwork, but I only got 75 percent on the homework from yesterday..."
+    e "Now my grade dropped to a B.. I didn't know each of the individual worksheets were worth so much-"
+    e "{alpha=0.5}{i}sighs{/i}{/alpha}"
+    e "It's fine. I'll do well on the quiz, and the grade will go right back up. I just have to find better resouces to help me with the quiz....."
+    e "{alpha=0.5}{i}looking back at the screen{/i}{/alpha}"
+    e "I HAVE to do well on this quiz. It's the only way I'm going to get it back to an A before my parents find out..."
+    e "Can I really, though...... Mr. Duras really thought I wasn't trying in his class. How... how would I try harder? His teaching style is just... so distracting. Could I have... tried harder to focus?"
+    e "It doesn't matter. I'll do well on this quiz, and my grade will go back up. It'll be just fine."
+    jump couple_days_pass
     return
 
+label couple_days_pass:
+    # ADD IN TIME SKIP SCREEN HERE
+    e "{i}Today's the day of the quiz and I am so going to fail but no no I will not fail I can not afford to fail-{/i}"
+    e "{i}I've looked up so much of the notes... I should be fine, right?{/i}"
+    e "{alpha=0.5}{i}walking down the hallway{/i}{/alpha}"
+    e "{i}Oh, there's Blaire. She doesn't seem worried at all. But why would she, when she's been talking about how easy the work's been?{/i}"
+    e "{i}Rajah's early too. He's just scrolling on his phone.. I wish I could be confident enough to do that.. but I've spent the last night worrying so much about the quiz that I feel like I barely slept at all...{/i}"
+    e "{i}I'm just going to review the notes I found on the topics while I wait... the more time spent cramming, the better, right?{/i}"
+    jump quiz_starts
+    return
 
-
+label quiz_starts:
+    md "Alright, class. Come on in."
+    e "{i}It's starting it's starting it's starting I am sooooo doomed-{/i}"
+    md "I hope you all studied for the quiz today! But before we get to that event of the day, we'll have a short warm-up to help you prepare for it."
+    md "I'll just review a couple of concepts, and you all can shout out the answers."
+    e "{i}No- I can never focus when there's that many people talking-{/i}"
+    md "So for our first question... Can anyone explain to me why the Articles of Colonies didn't work?"
+    n "--Because it didn't coin money-"
+    n "--Couldn't regulate trade---"
+    n "--No enforcement--"
+    n "--Ca̶̠̍ǔ̷̻s̴͓̐ẽ̶̫d̵̄ ̵͔̍c̴̦̅o̴̫͗nfl̷̜͋i̶̛̮c̴̜͆t̵̯͝ b̸͔̌ė̶̡t̵̡͂ẉ̶̚een ̶̙̍t̷̼̽h̶̳͝e ̶͖͆staṱ̸̂ȇ̸͓ś̵͉-"
+    n "-̸̨͊-̵͓̀ ̵̺̃C̶͓̐o̴̹̍ṵ̸͝l̶̹͘ḓ̵͛ǹ̴̖'̶̡̐t̶̡̊ ̷̲͗a̵̠̓d̴̯͆d̸̮͆r̴̙̃e̷̹͝ś̵͔s̸͇̓ ̶̥̕p̶̪̈r̵̞̾è̴͕s̴̗̀s̴͎̽i̴͙̍n̴̦̈́g̶̬̈ ̵̝̂t̵̗́ḩ̶̾r̷͇͛ẽ̴͖a̸̝͋t̷̻̍s̸͚͆-̸̧́-̷̝̑ "
+    n  "-̸̬̮̤̣̖̀̀C̵̞̏̓̀̾̓͒ờ̵͕͖̳̀̓͗̄u̸͚̟̟͓̓̎̾l̶̢̩̙̯̕͜d̶̳͓͈̠͛ñ̴̰͖͚̹͙̲̾͠'̴̢̭̖̅͝t̶̞̭̪͇͊͆͐̚ b̴̛̙͖̥̦̼̿̑͜ȇ̷̡̜͈̭͉̅̇̅͆̋͜ r̶̖̳̈́̔͂̿̊̄ͅȩ̸̛̟̬̩̘̓̓v̴̧͈̜̯́͆̈́̕͠í̵̺̏̕ṡ̶̩͋͠e̸̗̹͍̝̟̾͌̀͌͝͠d̸̲̺̫̩̆́̇̍̎͜ ̴̡̢̛͈͓͎͙͐̽͌̒ę̸̦̞̏͂a̶̡̰͍͐̍̄s̷̟͕̮̏̾̇̑i̴̝͙̅ḽ̷̡̨̫̲̈́y̷̐̉͒̒͝ "
+    n "-̷̠̭͉̯͚͉͓͊-̵̨̛̛̼̗̝̟͖͍̦̤̮̲̭̯̓̌̔̇͊̆̽͑͌̑͝ ̵̳̅̀̾͑͗͆͌̌͜͜͝͝͝W̴̻̝͒̐̄̅̔͛͐̽̅͆̕E̵̡̱̘̖̙̖͉̓͋͝A̴̧͋͗͋Ķ̵̩͔̖̓̾̐̎͘͠͝ ̴̱̱͙̤͎̩̹̹͈͇̋̀̽̐̚C̵̨̱͎̩̩͉͎̟͍̦͍̖͇̍͂́͌̔̄̿̈́͌͝E̵͆̍́̈́̽̈́̓͛͆̓̀̚ͅN̴̦̓͒̋́̂͊͌̊̑̈́̌̀͜T̷̡̹͚̥͚̤͔͚̋Ȑ̵̨̻̘̖̘̼̟͓̬̲̊A̴̛̛͚̟͔͎͎̝̗̓̆̋͗͆̏̓̽͗͆Ļ̷̪̬͓̮̲̭͖͕͜͝ͅ ̴̢̨̧̦͉̯̱̓̌̏̒̈̆̾͜G̴̲̗͙̦͇͍͉̟̰̪̤̮̦̿͆͋̑O̸̜̯͕͍̰̥̓V̴̜̺̯̫̤̋͠E̸̲̺̳̠̭̠̰̤̦̼̾̈́̃̈́͛̀͒̊̐̉͠ͅR̷̨͕̳̫̖͙̫̣̰̆̾Ṋ̸͓̰͐̈́̋̌̏̐́̕͘̕̚M̵̧̛̬̮̓͂̆̒̽͗̿̇͝E̶͕͔̥̞̬̬̹̣͍͒̀͛̿̂́͒̚N̷̙̞̰̞̖̠͆̏̍̂̈́͋̋́͛̀̚Ţ̷̫͛--"
+    e "{i}It's too loud----{/i}"
+    md "Excellent, class!"
+    e "{i}Great, it's over-{/i}"
+    md "Now for the next question-"
+    e "{i}NO-{/i}"
+    md "Who can name the court case that outlawed species based gerymandering?"
+    n "-̶̦͝-̵̢͆ ̶͍͛Ṡ̷͈h̷̦̾a̶̘̚w̸̜̅ ̷̛̪v̶͓̕.̴̫̋ ̷̰̅R̴̻͝u̶̞͌c̸̲̀k̸̻͊é̷̟r̵̢̎-̸̧̾-̸̮̓""
+    n "-̷̫̩̪͎̤́̇̑-̷̢̲͆̚ ̵̧̤̻͔͝͝S̵̫̭͓̣̃́̋͜h̶̪̜̺̘́̿͠a̷̭͋̈́̒͝ẇ̵̥̲̮͐͌͘ ̷̦͇̖͔̹͐͋͗͠͝v̸̮̪͉͚̄̇͜͝.̶̰̍ ̴̩͚́̐͝R̵̰̫̩̱̽ú̶̬͕͙̲̄ͅc̸̩̙̫̤̊ḱ̸̫̟̦̥̃̆͗̕e̶̮̒̀̀r̶̰͑-̸̢͙̝͉̍͛̂̄͜-̵̛̠̬̐ͅ""
+    n "-̴̡̣͚̳̭̯͔̯̾̌̆͆̋͝͝-̴̧̘̝̹̘̤̐̇̌́̌̄͜ ̶̡̭̟͍̂̍̑͌̂̔́͑̓̕S̷̡̞̗͈̋͗̐ḧ̸͙̪̖̬̼̱̠̺͐̀́͝ͅå̵͕̹͔̮̝̜̰̅̈̓̚͘̕͠w̶̡͈͍͌́͒͝ ̵̈́̀̈̈́̎̓̉͜͝v̶̮͖̰̘̿̈́̑.̶̜̽͠ ̷̨̛̻̤̪͇̯͇͒͑̋͝R̶̗̭͈͗͛̂͆͐̈́̿̄͘ṳ̴̢̧̞̬̥̝̰̍͊͐̃̄͗̊͐̇c̵̭͌͆̀̀͛́̿͆̿k̷̡̘͈͎̤̃̓͝ͅḙ̴͓̎́́͊͋̍̈͠ř̴̡̩͇̰̲͇̪̓͝!̴͕͖͉̹̺̠̥̤̩̟͐͛͛̈́!̶͎̪̟̣͔̇͂̆̈́͝͠-̸̡̘̮̳̩͎̱̗̈́͑-̴̻̺̘̳̺̤͖̻̪̈́""
+    e "{i}Shaw.. Shaw v. something.... I'll probably recognize it on the quiz-{/i}"
+    md "Now, last question! Who can tell me why the Bill of Rights was established?"
+    n "T̶̢̼̜̑̀̈́̎͆̒ö̷͕̗́̏̂ ̴͚̘̣͕̙̩͚͈̒͐̓͒̈́̐͜p̷̧̯͕̟̝̭͇͒̀̈́̏ͅr̷̳̦̹̮͑̏̓͜ò̵͎̍̔̈̈̄̿̔t̷̗͖̓̈́̐͌̑͋͐̈̏̂̈́͋ẻ̴̖̟̞̿͊c̴͖̞̰̦̥̻̝͖͚̔ͅt̵͕̏̐ ̶͕̬̹̾͑̇̏̾̏̍ô̶̩̫̪̲͓̂́̕ù̵͍̞͙̦̠̖̮̣̞́̈̓͋͂̈̎̾̕͜r̵̼̞̜̪͇̺͙͔̖̼͈̠͆̏̔̏̀̂͊ ̴̝̾͒͗ŗ̷̨͈̲͚̘̠̟͎̪̑̏̉͂̂̓̒̔͠ḯ̴̧͍̞͓̹̼͈̞̓̔́̎g̴̫̻̞̘̗̲̱͙͋̅̿̉͗̽͝͝ḧ̵̟́͆͊̈́̓͗̾̆͐t̶͖̻͕̳̔̑̓̀̾͊̓͝ş̴̇̃̕ ̶̙̀̑͐̏͝f̴̜͉̆͗͒r̸̡̧͕̯͍̜̲͓̗̘͆͆́̉̍̾̏͒́͌͘ǫ̸̗͙̩̻͙̟̪̏͆̍m̵̛̗̏̓̒́́̊̊̑͆ ̷̢̡͕̝̅̃̎̄̆́̏̔̕͠t̵̲̱̫͔̦̳̟̞͈̫͓͕͊̀̀̊͒̈́͗͆̐͘h̸͚͖͙̗̯͖̜̆̉̓̐̃̎ẹ̸̘̰̩̱̱̻̯̮͉̫͈̊̈̍̂͗͂ ̶̡̢̞̖͍͙̝͖͙̲̹̽̈͂́͘ç̴̢̛̛̘̲̦̟̭̩̠̤̮̍̂͑́̑̀̈̽͜͝͠ę̸̧̢̟͉̝͖̫̯̱̍̀̂͆̔̀̈́͜n̵̡͕̮̆͐̾ẗ̴̛̛͓͓̹͍̤́̓͐̋̋͐̏r̵̬̭̲͍̮͚̀̈́̒͋̇̀a̵̧̤̥͂̎l̵̛͎͚̣̫̼̮̅̾̊̀̈́͒̄̆̈́̊ ̶̠̩̥̞̜͈̝̮̞̦͇̬̓ĝ̸̜̲̤̗̥̃̈͋̈́͗̍̌̿̚͠ǫ̵̛̋̓̄̍͒̈́̆̀͐̋͝v̶͈͚͛̌̀͒̋͐̓̈́͝e̷̯̒̈́̌̉͐̍̚͠r̵̦̗͈̲͓͉̻͙̼͕͊͑͑̎̂̂́͐̆̉͘̚͜ń̶̛̠̺͔̖̣̳̫̈́͑̾̚m̵̪͓̩̀̋͊̓̓̌̍͆̕ḙ̴̡̛̀ņ̶̗͙̻̼͓̈́̎t̷̢̡̲̦̪͔̦͛͊̆̈́͊͆͊̕ͅ!̶̧̢̯̻͔̈́̉̆̈́̊̌̃̾""
+    md "{alpha=0.5}{i}clapping his hands together{/i}{/alpha}"
+    md "Yes! Exactly! I saw those were the most missed questions on the last couple worksheets I assigned to you, and you answered them beautifully! Now, it's time for the quiz!"
+    r "{alpha=0.5}{i}muttering next to Ether{/i}{/alpha}"
+    r "'Answered them beautifully?' I didn't even know half of what everyone was saying because everyone was shouting over each other!"
+    e "I know..... I couldn't focus much on anything anyone said-"
+    md "I'm coming around to pass out the quiz now. You have until the end of class to finish it."
+    md "Rajah, Ether, if you could please stop talking until I finish passing out the quiz."
+    md "If I catch anyone else talking during the quiz, I will give you a zero."
+    r "{alpha=0.5}{i}shuts up, looking embarrassed{/i}{/alpha}"
+    e "{i}Okay. Quiz. I really didn't hear anything anyone was saying, but maybe I don't need to. I.. think I could've answered all those questions by myself-{/i}"
+    return
 
 # # The game starts here.
 # label start:
