@@ -684,7 +684,70 @@ label quiz_starts:
     md "If I catch anyone else talking during the quiz, I will give you a zero."
     r "{alpha=0.5}{i}shuts up, looking embarrassed{/i}{/alpha}"
     e "{i}Okay. Quiz. I really didn't hear anything anyone was saying, but maybe I don't need to. I.. think I could've answered all those questions by myself-{/i}"
+    md "Ether. Eyes on your own paper, please."
+    e "{i}But I wasn't-{/i}"
+    e "{alpha=0.5}{i}stares down at the paper{/i}{/alpha}"
+    e "{i}I'll just try answering these questions.{/i}"
+    e "{i}Question 1: Describe the three branches (Legislative, Executive, and Judicial) and their purposes.{/i}"
+    e "{i}I remember there was a question like this on the worksheet- but what was it? I think it was just about the Legislative branch...{/i}"
+    e "{i}Legislative... I remembered looking this up the other day too.. It was either creating or enforcing the law, right? And then I remember Judicial was passing judgement or something like that, because Rajah asked why it was so useless one time-{/i}"
+    e "{i}Maybe I'll just come back to this. The answer might come back to me later.{/i}"
+    e "{i}Next question: Oh, I don't even understand half the words in this one. Mr. Duras never mentioned 'Confederation', or the 'United Alliance' in any of these, did he?{/i}"
+    e "{i}Another question to come back to-{/i}"
+    e "{i}Third question: What is the point of the government?{/i}"
+    e "{i}Was this a topic I missed on Mr. Duras' post? I could've sworn I didn't see it there- Am I stupid?{/i}"
+    e "{i}I can probably make up an answer for that question, but I don't know if it'll be right...{/i}"
+    e "{i}Let's just go through the rest of the questions-{/i}"
+    e "{i}What is unethical about gerrymandering?{/i}"
+    e "{i}Describe the rationale for the attempted coup against Zebulon's government in the 1880s-{/i}"
+    e "{i}I'll just... come back to all the free response questions later-{/i}"
+    e "{i}Oh, multiple choice! At least I actually have a shot of answering these questions correctly-{/i}"
+    e "{i}I'm just going to circle the answer that looks the most accurate, and hope for the best... And then I'll go back and fill in an answer for the short answer questions...{/i}"
+    e "{i}My grade is going to fall because I can't figure out how to pay proper attention in class... Mr. Duras doesn't even seem to like me anymore anyway, so he hasn't been the most helpful either....{/i}"
+    e "{i}No, I can't be blaming Mr. Duras. It's my own stupid fault that I can't understand what he's saying, and there's no one in the universe I can blame for my own mistakes but myself.{/i}"
+    e "{i}Why... why did I have to be like this? Why couldn't I just be like everyone else.. and be smarter?{/i}"
+    s "{alpha=0.5}{i}..... later....{/i}{/alpha}"
+    jump e_walks_home
     return
+
+label e_walks_home:
+    s "{alpha=0.5}{i}on the way home....{/i}{/alpha}"
+    r "---so Blaire and I were arguing about who was supposed to turn in the slideshow for history, but we couldn't even come to an agreement because she was being SO unreasonable- "
+    r "She literally said she didn't trust anyone in the group to turn it in, but she somehow trusted me enough to do it? I thought that implied she'd do it!"
+    e "That's not good..."
+    r "No, it really wasn't. We were arguing about it all the way to Calculus, and Ms. Fong had to tell both of us to shut the hell up. I was so sure she was about to give us a zero on the quiz..."
+    e "Good thing she didn't...."
+    menu:
+        "Bring up the quiz":
+            jump bring_up_quiz
+        "Choose to stay quiet":
+            jump stay_quiet
+    return       
+
+label bring_up_quiz:
+    e "Speaking of quizzes, how do you think you did on the Government quiz?"
+    r "It was... "
+    r "....definitely something."
+    e "'Definitely something'?"
+    r "Terrible."
+    e "... Did you study?"
+    r "I tried for... 10 minutes, and then I gave up because I felt too much like an idiot to keep trying."
+    r "I will never understand how Blaire understands everything in that class so easily when Duras doesn't like re-explaining himself."
+    e "...."
+    e "Yeah....."
+    r "It's alright, I've already accepted that I'm too stupid to thrive in that class. C's get degrees, right?"
+    e "Absolutely...."
+    r "Was the quiz any better for you, Ether?"
+    menu:
+        "Ether tells them he thinks he failed.":
+            jump think_e_failed
+        "Choose to stay quiet":
+            jump stay_quiet
+    return
+
+label stay_quiet:
+    
+    
 
 # # The game starts here.
 # label start:
