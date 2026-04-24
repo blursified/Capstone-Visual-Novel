@@ -10,7 +10,8 @@ define b = Character("Blaire", color="#eba2e1")
 define v = Character("Video", color="#7a7976")
 define s = Character("-", color="#7a7976")
 define n = Character("Random Students", color="#7a7976")
-
+define em = Character("Ether's Mom")
+define ed = Character("Ether's Dad")
 transform zoom_center: 
     zoom 0.35 #adjust as required
     center
@@ -154,6 +155,7 @@ label ask_blaire_choice:
     b "Well-"
     jump turn_in_unfinished_work
     return
+
 label ask_duras_choice:
     show ether test at zoom_center
     e "Maybe I can ask Mr. Duras for help...."
@@ -746,9 +748,159 @@ label bring_up_quiz:
     return
 
 label stay_quiet:
+    e "I think it was... okay."
+    r "Hey, better than me, at least. I spent all of yesterday evening watching SladeSlice because I gave up trying to study the damn thing. You should watch him sometime- he makes gaming videos, has some really funny reaction videos-"
+    e "{i}I don't know if I'd be able to do that without feeling guilty about not trying harder, but sure, Rajah.{/i}"
+    e "{i}I wish I could talk about it without feeling embarrassed.. because I sure can't bring it up to my parents.{/i}"
+    e "{i}My parents would never understand how a teacher could be bad, because they'd just think I'm not trying.{/i}"
+    e "{i}Just like Mr. Duras...{/i}"
+    e "{i}And when they see my grade drop, they'll just blame me.{/i}"
+    e "{i}What would I even tell them anyway? That I can't focus because Mr. Duras is moving around too much? That I can only focus on either the notes he wants us to take, or the lecture he's giving at the same time?{/i}"
+    e "{i}No, that just sounds like an excuse.... I'll just have to hope they don't find out....{/i}"
+    r "Aight, Ether, I'm gonna head home from here now. See ya tomorrow, alright? Good talk today?"
+    e "See you tomorrow, Rajah!"
+    e "{i}Good talk? I hardly said anything...{/i}"
+    e "{i}It's fine. I have bigger priorities, anyway. Like the huge homework load I need to get done...{/i}"
+    jump e_returns_home
+    return
     
-    
+label think_e_failed:
+    e "I think I failed the quiz....."
+    r "Mhm..."
+    e "I feel like I guessed pretty much all the questions, even though I genuinely did try to look up everything Duras taught.."
+    e "I was sure I'd at least be somewhat fine with all the YouTube videos I watched, but..."
+    r "Mhm...."
+    e "I just wish Mr. Duras didn't assume I wasn't trying. It's so annoying, to put all your effort into a class and the teacher just decides to not really help you because you didn't immediately understand everything they were saying."
+    r "Yup."
+    r "Relatable."
+    r "{alpha=0.5}{i}checking phone{/i}{/alpha}"
+    r "Dang, they already dropped a new video?"
+    e "{alpha=0.5}{i}momentarily stunned{/i}{/alpha}"
+    e "Who dropped a new video?"
+    r "There's this YouTuber I found the other day called SladeSlice who does gaming and their videos are so funny-"
+    r "you know, this one time, they trolled someone in minecraft by pretending to be a water block and that person couldn't find them for so long-"
+    e "That's... great...."
+    r "They play a lot of different games, too. You know that new game Little Nightmares that came out recently? They have a whole reaction series to it and they say the most outlandish things- it's hilarious."
+    r "You should try watching them sometime!"
+    e ".... How long have you been watching them?"
+    e "{i}If I knew Rajah would get distracted this easily, I wouldn't have said anything...{/i}"
+    r "Like... couple days ago? I think the day Duras told us there was a quiz, I tried to study, gave up, then started bingewatching this guy instead because watching someone die repeatedly in hardcore is way funnier than trying to understand how our government works."
+    e "I see..."
+    r "They've already done collabs with people like Pewdiepie and Jacksepticeye and it's great-"
+    e "{i}Look at Rajah... he doesn't understand much from Government either, but he seems so accepting of it... he doesn't seem worried at all...{/i}"
+    e "{i}School probably doesn't matter to him as much it does to me...{/i}"
+    e "{i}I just won't bring it up next time...{/i}"
+    r "You good? You look like your dog just died."
+    e "No, I'm fine."
+    e "{alpha=0.5}{i}smiles{/i}{/alpha}"
+    e "Carry on..."
+    jump e_returns_home
+    return
 
+label e_returns_home:
+    e "{alpha=0.5}{i}closing door{/i}{/alpha}"
+    e "Okay, I'm home."
+    e "It is... 4:15. That leaves me... with 6 hours to finish up everything, and 8 if I need to stay up until 12."
+    e "But I really don't want to do homework... "
+    e "And 6 hours is a lot of time..."
+    e "No, Ether, do it for the grade..."
+    e "{alpha=0.5}{i}walks up to his room{/i}{/alpha}"
+    e "Where do I start....."
+    e "Maybe Government? Not sure I want to think about Duras right now, though..."
+    e "Let's do some math instead.. the answers shouldn't be too hard to figure out, right?"
+    e "Hmmm..... the notes she gave us are confusing me..."
+    e "I'll just try a problem and check the answer key."
+    e "Nope, that was wrong... did I forget a step?"
+    e "Yep, forgot to bring the denominator down... "
+    e "That's still not it..."
+    e "I'll just skip this one and come back to it later- maybe I just need to do some different ones to better understand it first...."
+    e "That's not good.... that is a completely different coefficient than it's supposed to be.."
+    e "The answer key has a 1/2 in front... Where did that even come from?"
+    e "Is this the start of my academic downfall? Government's just the start, and my grades start falling for all my other classes too?"
+    e "So I really just am incapable of paying attention in class, huh? I was so distracted by how badly I did on the Government quiz that I couldn't even focus during math class anyway...."
+    e "Argh, maybe I'll just take a break. I'm probaly still too distraught by the government quiz today to focus..."
+    e "Maybe I'll just watch one SladeSlice video and see what Rajah like so much about him."
+    v "Alright. guys, welcome back to another video of me trying to beat Minecraf-"
+    v "WHY WAS THERE A SKELETON THER-"
+    e "{alpha=0.5}{i}starts laughing{/i}{/alpha}"
+    e "What is that cut-off scream??"
+    e "He did NOT just slip that reference in there-"
+    e "That was- {alpha=0.5}{i}dies laughing{/i}{/alpha} -so stupid-"
+    e "Why are you saying it like that?"
+    e "Okay, nevermind, I see where Rajah's coming from. This dude IS funny."
+    e "That video was only 10 ish minutes.. He has some shorts on here too-"
+    v "Why there is a skeleton there- NO-"
+    e "This is funnier without context- Haha-"
+    e "I have time to watch another....."
+    e "Tehehehheh-"
+    e "Pfffft-"
+    e "Why did he just {i}jump off{/i}?"
+    e "{alpha=0.5}{i}wheezing{/i}{/alpha}"
+    e "No- don't- HAH-"
+    e "I need to see part two of this-"
+    e "WHERE DID THE CAT COME FROM???"
+    e "{alpha=0.5}{i}WHEEZES{/i}{/alpha}"
+    e "Oh he died to another skeleton-"
+    e "Where does he keep coming up with these insults?! I wish I was that creative-"
+    e "Ah, that was funny... "
+    e "IT'S ALMOST 10?? I still haven't finished any homework at all-"
+    e "I'm just gonna show a bit of work then copy off the answer key- the work just needs to be done, not necessarily done well."
+    e "Alright, time to sleep...."
+    e "Thank goodness I finished my homework in time..."
+    jump next_day
+    return
+
+label next_day:
+    e "I don't want to go to school again..."
+    e "{alpha=0.5}{i}gets up{/i}{/alpha}"
+    e "I slept late yesterday....."
+    e "Anyway.. to Government we go..."
+
+    # -------------------------------------- time skip
+
+    md "-- and today we're going to cover the Bill of Rights---"
+    md "---- should know the first ten Amendments---"
+    e "{i}I still can't understand anything he's saying because he's moving around so much... and there's so much text on that slide that it's overwhelming...{/i}"
+    e "{i}Mr. Duras, why... can you just stop moving so I can actually focus...{/i}"
+    # Sytle note: make the classroom and md low opacity or darker to show that ether is out of it
+    md "----who can tell me which side voted for the Bill of Rights---"
+    md "----Not quite---"
+    e "{i}There is no hope for me in this class...{/i}"
+    e "{i}Mr. Duras won't want to help me... and apparently I can't absorb anything he's saying while I'm copying down the notes...{/i}"
+    e "{i}I keep phasing in and out between listening to him talk and actually copying down the notes...{/i}"
+    e "{i}If only I could multi-task as well as everyone else in this class--{/i}"
+    md "---I'll pass out a worksheet for you all to do while I continue the notes---"
+    e "{i}I can't concentrate on reading anything on this worksheet because Duras keeps talking so much...{/i}"
+    e "{i}Maybe I'll just pay attention to what he says instead?{/i}"
+    md "---and that's why the answer to the first question is what it is---"
+    e "{i}I didn't even... catch the answer...{/i}"
+    md "--- Second one should be the case we went over that concerns the Equal Protection Clause--"
+    e "{i}I'll just write that down.. and only that, because I couldn't catch anything else he said--{/i}"
+    md "-----Moving on to our first ten amendmends, which are the Bill of Rights--"
+    e "{i}You know what, maybe I'll just give up because I'm not going to end up finishing this anyway....{/i}"
+    e "{i}I just want to disappear...{/i}"
+    md "---And that's it for today! Please turn in the worksheet as you head out the door and complete the homework before you come in next class!"
+    e "{i}Sure, Mr. Duras.. whatever you wish....{/i}"
+
+    # -------------------------------------- time skip
+
+    e "{alpha=0.5}{i}coming home from school{/i}{/alpha}"
+    e "{i}I'm beginning to realize how much I don't like going to Government.. and Calculus...{/i}"
+    e "{i}It's been a week since that quiz.. Mr. Duras graded the quiz yesterday..{/i}"
+    e "{i}I have a B in Government now.. and a B+ in Stats... my other grades are beginning to drop too....{/i}"
+    e "{i}This is hopeless...{/i}"
+    e "{i}I'm so tired of feeling like an idiot....{/i}"
+    e "{i}At least when I'm on YouTube, I don't think about how screwed I am for my classes...{/i}"
+    e "{alpha=0.5}{i}checking the time{/i}{/alpha}"
+    e "{i}I still got a couple hours... and I finished work last time within an hour.. I can afford to watch some more SladeSlice...{/i}"
+    jump after_another_couple_days
+    return
+
+label after_another_couple_days:
+    # ------------------------------------------ more time skip
+    e "{i}Back home, finally...... I don't wanna go to school anymore...{/i}"
+    return
+    
 # # The game starts here.
 # label start:
 
