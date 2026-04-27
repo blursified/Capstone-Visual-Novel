@@ -899,7 +899,112 @@ label next_day:
 label after_another_couple_days:
     # ------------------------------------------ more time skip
     e "{i}Back home, finally...... I don't wanna go to school anymore...{/i}"
+    e "{i}I just wanna finish watching that video from earlier- and scroll through the shorts-{/i}"
+    em "ETHER!"
+    e "{i}She's back early today?{/i}"
+    e "{i}.. why is she back so early today? She usually doesn't come home until I'm asleep-{/i}"
+    e ".. Yes, Mom?"
+    em "Why are your grades so low?"
+    e "{alpha=0.5}{i}blinking wearily{/i}{/alpha}"
+    e "Oh.. I've just been... struggling in some classes. It's just Government-"
+    em "Why are you struggling in Government {i}now{/i}? You had an A in that class just two weeks ago!"
+    e ".... Mr. Duras keeps assigning work I don't understand-"
+    em "Did you ask him for help?"
+    e "Yes, but-"
+    em "This is ridiculous, Ether. I come home late from work every day to keep you fed, and you can't even keep your grades up?"
+    e "...."
+    em "Why have you been slacking off? I expected better from you!"
+    e "I.. I'm trying, Mom-"
+    em "Then you must not be trying hard enough!"
+    e "....."
+    em "I didn't raise you to be this incompotent. Those grades better be back up by the time your father gets back from his business trip."
+    e "... yes, Mom."
+    em "Don't just 'yes, Mom' me. Do better, Ether."
+    em "{alpha=0.5}{i}scoffs{/i}{/alpha}"
+    e "I..."
+    e "I'll try harder, Mom....."
+    e "{i}It's just like Mr. Duras, all over again...{/i}"
+    e "{alpha=0.5}{i}trudging up to his room{/i}{/alpha}"
+    e "I guess I should start with doing the homework..."
+    e "But there's so much to do...."
+    e "I just have to choose one and start, right?"
+    e "Maybe I'll just do the hard one first... so... Government....."
+    e "I have to take out my notes for this....."
+    e "Notes.. notes.. where are you...?"
+    e "Here..... okay, first question asks about the first Amendment... where did I write that? Here.... I don't even understand what I wrote.. There's the cases about the Amendment, but not the amendment itself....."
+    e "I bet Mr. Duras just said it aloud and I wasn't paying attention..."
+    e "I'll just.. Google it or something...."
+    e "That.. looks confusing.... I'll just write it down, doesn't matter..."
+    e "I don't that question, or the question after that, or any of these..."
+    e "I really don't want to do any homework......."
+    e "I don't want to ask anyone for help... I feel stupid enough...."
+    e "Let's check my grades and see how bad it is..."
+    e "A C in Government, B in Stats... B in Mandarin, too? Wow, I really am losing my edge..."
+    e "Maybe if I take a break, I'll be able to focus...."
+    e "Just a short little break. One video. Just one, and I'll do some work."
+    jump the_next_day
     return
+
+label the_next_day:
+    e "{i}Back to school again....{/i}"
+    r "Ether!"
+    e "Hi-"
+    r "I found this really goofy clip you gotta watch it please it's so funny-"
+    e "What the- where did you even find this?"
+    r "Dunno, but the algorithm found it for me somehow- Look at this dumb idiot HAHA-"
+    r "Ah hold on my dad's texting me, give me a sec-"
+    r "{alpha=0.5}{i}checks his phone{/i}{/alpha}"
+    r "{alpha=0.5}{i}snorts{/i}{/alpha}"
+    r "{alpha=0.5}{i}chuckles{/i}{/alpha}"
+    e "{i}......He went back to scrolling, didn't he?{/i}"
+    e "{i}I might as well, too-{/i}"
+    e "{i}Wait- Google classroom says this thing is due today??{/i}"
+    e "{i}Oh I didn't finish any work last night because I got so distracted-{/i}"
+    e "{i}Do I really wanna try doing it all now, though...?{/i}"
+    e "{i}I already know I'm not going to finish it all.{/i}"
+    menu:
+        "Go on his phone":
+            jump e_goes_on_phone
+        "Try to finish the work he didn't finish the night before"
+            jump e_trys_to_do_work
+    return
+
+label e_goes_on_phone:
+    e "{i}Eh, it's fine... just another 15 minutes before class starts won't make a huge difference, right?{/i}"
+    e "{alpha=0.5}{i}takes out phone to scroll{/i}{/alpha}"
+    e "{i}Wow, that really IS funny-{/i}"
+    e "{i}I can show this to Rajah later-{/i}"
+    s "{alpha=0.5}{i}bell rings{/i}{/alpha}"
+    md "Alright, everyone, come in! Let's start class today~"
+    e "{i}I.. really don't want to be here...{/i}"
+    e "{i}I can never grasp anything he's saying because he's always DOING SO MUCH...{/i}"
+    e "{i}Try and focus, Ether. Just try to focus. One thing at a time-{/i}"
+    md "And now, we're going to go over the Amendments from the Bill of Rights- I expect you all to know all of them by now! So the first one is-"
+    e "{i}I would ask him if he could stay on that slide longer... but I don't think he'd do anything to help me anyway since he thinks I'm not trying...{/i}"
+    e "{i}Honestly... screw this class, I'll just do my Mandarin homework. It's not like I'll understand anything Duras is saying regardless.{/i}"
+    jump mandarin_class_continues
+    return
+
+label e_trys_to_do_work:
+    e "{i}Agh, I really don't wanna to get yelled at again, so I might as well try to do what I can-{/i}"
+    e "{i}I know Ms. Fong won't be collecting the work today, so I've got some more time to do calc-{/i}"
+    e "{i}I have Government first, so I'll just try getting this worksheet done first-{/i}"
+    e "{i}... I forgot how little of the content I understood.... I can't answer these questions without understanding what it's asking, and since I don't....{/i}"
+    e "{i}Maybe I could ask someone for help?{/i}"
+    menu:
+        "Ask for help?":
+            jump ask_for_help
+        "Go on his phone":
+            jump e_goes_on_phone
+    return
+
+label ask_for_help:
+    return
+
+
+
+
+
     
 # # The game starts here.
 # label start:
