@@ -166,7 +166,8 @@ label start:
     r "Nothing! Just expressing appreciation for Blaire's taste."
     hide rajah
     show ether happy at zoom_center
-    e "{alpha=0.5}{i}quietly snickering{/i}{/alpha} Really?"
+    e "{alpha=0.5}{i}quietly snickering{/i}{/alpha}"
+    e "Really?"
     hide ether
     show duras base at zoom_center2
     md "Anyway, let's wrap this up and move on to the lesson for today. As you can probably tell, I've dressed up today! Does anyone want to guess who I'm dressed up as?"
@@ -191,7 +192,7 @@ label start:
     md "What was that, Ether?"
     hide duras
     show ether coveringface at zoom_center
-    e "{alpha=0.5}{i}embarrassed{/i}{/alpha} Um, I don't know if I'd be right-"
+    e "{alpha=0.5}{i}embarrassed{/i}{/alpha} \nUm, I don't know if I'd be right-"
     hide ether
     show rajah base at zoom_center_r
     r "He said Earth."
@@ -2294,7 +2295,7 @@ label sneak_phone_out:
     menu:
         "Try doing the work":
             jump try_doing_the_work
-        "Put away his phone briefly then take it out one Cheng Lao Shi isnt looking":
+        "Put away his phone briefly then take it out one Cheng Lao Shi isn't looking":
             jump take_out_phone_when_ch_not_looking
     return
 
@@ -4054,7 +4055,7 @@ label dont_tell_ch_abt_gov:
 label stops_phone_addiction_from_going_too_far:
     # (walking home)
     scene bg blackscreen
-    s "Walking home.."
+    s "A few weeks later.."
     scene bg street
     show rajah base at zoom_center_r
     r "Oi! Ether!"
